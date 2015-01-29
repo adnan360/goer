@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9]+)$ test.php?code=$1
+RewriteRule ^([a-zA-Z0-9]+)/$ test.php?code=$1
+RewriteRule ^([a-zA-Z0-9]+)/(.*)$ test.php?code=$1&code2=$2
+#RewriteRule . test.php [L]
+DirectoryIndex index.htm
